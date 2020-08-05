@@ -1,0 +1,775 @@
+* {
+  margin: 0;
+}
+
+.hero {
+  background-image: url("./images/indian.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 45.2rem;
+  background-position: 0% 0%;
+}
+
+.hero-circle {
+  background: #e39c38;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  position: absolute;
+  right: 10%;
+  left: 34%;
+  top: 22.8%;
+  padding: 5px;
+  box-shadow: 0 0 0 20px #eed4a5, 0 0 0 38px #f4e8d4;
+}
+
+.hero-circle-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.side-image {
+  position: absolute;
+  top: 400px;
+}
+
+ul.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 60%;
+  position: absolute;
+  right: 0%;
+  display: flex;
+  margin-top: -70px;
+}
+
+ul.nav li {
+  float: left;
+  width: 24.6%;
+  margin-left: 0.4%;
+}
+
+ul.nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 75px;
+  background-color: orange;
+  font-size: 24px;
+}
+
+ul.nav li a:hover:not(.active) {
+  background-color: orange;
+  height: 70px;
+}
+
+ul.nav .active {
+  background-color: #4caf50;
+  height: 70px;
+}
+
+.about-section {
+  background-color: #fdf6ea;
+  height: 110vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 150px;
+}
+
+.about-section .content {
+  width: 55%;
+  margin-top: -200px;
+}
+
+.about-section .content .top .first {
+  color: #d29b81;
+  font-size: 28px;
+  margin-bottom: 0.7em;
+}
+
+.about-section .content .top .second {
+  color: green;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 3em;
+}
+
+.about-section .content .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-section .content .bottom .statement-div {
+  width: 40%;
+}
+
+.about-section .content .bottom .statement-div p {
+  font-size: 16px;
+}
+
+.about-section .content .bottom .title {
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 1em;
+}
+
+.download-section {
+  background-color: #98ae20;
+  height: 535px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.download-section .food-tray-image {
+  min-height: 400px;
+  width: 80%;
+  margin-top: -125px;
+  position: relative;
+  z-index: 1;
+  background-image: url("./images/Food Tray.jpg");
+  background-position: 70% 38%;
+}
+
+.download-section .bottom {
+  display: flex;
+  width: 63%;
+  justify-content: space-between;
+  margin-top: -110px;
+  position: relative;
+  z-index: 2;
+}
+
+.download-section .bottom .card {
+  width: 440px;
+  height: 350px;
+  background: #1f571a;
+  padding: 0;
+}
+
+.download-section .bottom .card .content {
+  padding: 50px;
+  height: -webkit-fill-available;
+}
+
+.download-section .bottom .card .content .text {
+  padding: 20px;
+}
+
+.download-section .bottom .card .title {
+  font-size: 42px;
+  color: #ffffff;
+  width: 70%;
+  margin-bottom: 0.5em;
+}
+
+.download-section .bottom .card .subtitle {
+  font-size: 18px;
+  color: #98ae20;
+  margin-bottom: 0.5em;
+  letter-spacing: 1px;
+}
+
+.download-section .bottom .card button {
+  width: 100%;
+  height: 65px;
+  border: none;
+  border-radius: 65px;
+  color: #1f571a;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.download-section .bottom .card button:hover {
+  color: #ffffff;
+  background-color: #1f571a;
+  border: 1px solid #ffffff;
+  cursor: pointer;
+}
+
+.pub-btn-div {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+  align-items: flex-end;
+  width: 340px;
+}
+
+.pub-btn-div button {
+  width: 100%;
+  height: 65px;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  color: #ffffff;
+  background-color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.pub-btn-div button:hover {
+  border: 1px solid #ffffff;
+  color: #98ae20;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.menu-section {
+  display: flex;
+}
+
+.menu-section .menu {
+  width: 20%;
+  flex: 1;
+}
+
+.menu-section .menu .menu-list {
+  background: red;
+  height: 750px;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.menu-section .menu .menu-list .menu-list-item {
+  background: green;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}
+
+.menu-section .menu .menu-list .menu-list-item:nth-child(1) {
+  background: #e25519;
+}
+
+.menu-section .menu .menu-list .menu-list-item:nth-child(2) {
+  background: #e39b38;
+}
+
+.menu-section .menu .menu-list .menu-list-item:nth-child(3) {
+  background: #efb357;
+}
+
+.menu-section .menu .menu-list .menu-list-item:nth-child(4) {
+  background: #efb357;
+}
+
+.menu-section .menu .menu-list .menu-list-item:nth-child(5) {
+  background: #fad193;
+}
+
+.menu-section .content {
+  display: flex;
+  width: 80%;
+  position: relative;
+}
+
+.menu-section .content .meal-image {
+  width: 40%;
+  background-image: url("./images/Asaro.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.menu-section .content .meal-details {
+  width: 60%;
+  background-color: white;
+  padding-right: 150px;
+}
+
+.menu-section .content .meal-details .title-container {
+  padding: 70px 60px 15px;
+  border-bottom: 4px solid orange;
+}
+
+.menu-section .content .meal-details .title-container .title {
+  color: #98ae20;
+  font-size: 24px;
+}
+
+.menu-section .content .meal-details .title-container .subtitle {
+  color: #1f571a;
+  font-size: 30px;
+}
+
+.menu-section .content .meal-details .details-container {
+  padding: 20px 60px;
+}
+
+.menu-section .content .meal-details .details-container h3 {
+  margin-bottom: 1em;
+}
+
+.menu-section .content .meal-details .details-container ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-bottom: 1em;
+}
+
+.menu-section .content .meal-details .details-container ul li {
+  line-height: 200%;
+}
+
+.menu-section .content .meal-details .carousel-controller {
+  display: flex;
+  padding: 20px 60px;
+}
+
+.menu-section .content .meal-details .carousel-controller .dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background-color: #888888;
+  margin-right: 5px;
+}
+
+.menu-section .content .meal-details .carousel-controller .dot.active {
+  background-color: #000000;
+}
+
+.sub-heading-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 540px;
+  background-color: #faeeda;
+}
+
+.sub-heading-section .content {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 270px;
+  flex-direction: column;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("./images/leaf.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: 0 1px 30px 10px #00000050;
+}
+
+.sub-heading-section .content .title {
+  color: white;
+  font-size: 48px;
+  margin-bottom: 2rem;
+}
+
+.sub-heading-section .content .body {
+  color: #efb357;
+  font-size: 16px;
+  text-transform: uppercase;
+  width: 80%;
+  text-align: center;
+}
+
+.footer {
+  min-height: 730px;
+  background-color: #e25519;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(226, 85, 25, 0.9),
+      rgba(226, 85, 25, 0.9)
+    ),
+    url("./images/footer-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 300% 300%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.footer .logo {
+  width: 400px;
+  height: 400px;
+  background-color: #ffffff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  position: relative;
+}
+
+.footer .logo p {
+  color: #e25519;
+  font-size: 86px;
+}
+
+.footer .footer-items {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.footer .footer-items .content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 0 0 60px;
+}
+
+.footer .footer-items .title {
+  color: #efb357;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.footer .footer-items .content .body .phone {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.footer .footer-items .content .body .email {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.footer .footer-items .content .body.icons {
+  display: flex;
+}
+
+.footer .footer-items .content .body.icons .img-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.footer .footer-items .content .right {
+  display: flex;
+}
+
+.footer .footer-items .content .right .follow {
+  margin-right: 100px;
+}
+
+.footer .footer-items .content .right .send {
+  width: fit-content;
+}
+
+.footer .footer-items .content .right .send .title {
+  color: #ffffff;
+  width: 50%;
+  white-space: wrap;
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+  }
+
+  .hero-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 0;
+    padding: 5px;
+    margin-top: 50px;
+  }
+
+  .side-image {
+    top: 65vh;
+    height: 300px;
+  }
+
+  ul.nav {
+    width: 100%;
+    position: fixed;
+    right: 0%;
+    bottom: 0;
+    display: flex;
+    margin-top: 0;
+    height: 50px;
+    z-index: 5;
+  }
+
+  ul.nav li {
+    float: left;
+    width: 25%;
+    margin-left: 0%;
+  }
+
+  ul.nav li a {
+    width: 100%;
+    height: 50px;
+    background-color: orange;
+    font-size: 18px;
+  }
+
+  ul.nav li a:hover {
+    background-color: orange;
+    height: 50px;
+    border-top: 3px solid #ffffff;
+  }
+
+  ul.nav .active {
+    background-color: #4caf50;
+    height: 50px;
+  }
+
+  .about-section {
+    height: fit-content;
+    justify-content: center;
+    padding: 20px;
+    padding-right: 20px;
+  }
+
+  .about-section .content {
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 100px;
+  }
+
+  .about-section .content .top .first {
+    font-size: 20px;
+  }
+
+  .about-section .content .top .second {
+    font-size: 16px;
+    margin-bottom: 1em;
+  }
+
+  .about-section .content .bottom {
+    display: block;
+  }
+
+  .about-section .content .bottom .statement-div {
+    width: 100%;
+  }
+
+  .about-section .content .bottom .statement-div p {
+    font-size: 16px;
+    margin-bottom: 1em;
+  }
+
+  .about-section .content .bottom .title {
+    font-size: 20px;
+    margin-bottom: 0.5em;
+  }
+
+  .download-section {
+    height: fit-content;
+  }
+
+  .download-section .food-tray-image {
+    min-height: 200px;
+    width: 80%;
+    margin-top: -75px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .download-section .bottom {
+    display: block;
+    width: auto;
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+  }
+
+  .download-section .bottom .card {
+    width: 100%;
+    height: fit-content;
+    background: #1f571a;
+    padding: 0;
+    border-radius: 4px;
+    margin-bottom: 20px;
+  }
+
+  .download-section .bottom .card .content {
+    padding: 20px;
+    height: -webkit-fill-available;
+  }
+
+  .download-section .bottom .card .content .text {
+    padding: 0;
+  }
+
+  .download-section .bottom .card .title {
+    font-size: 32px;
+    width: 100%;
+    margin-bottom: 0.5em;
+  }
+
+  .download-section .bottom .card .subtitle {
+    font-size: 16px;
+    margin-bottom: 1em;
+  }
+
+  .download-section .bottom .card button {
+    height: 45px;
+  }
+
+  .pub-btn-div {
+    width: auto;
+  }
+
+  .pub-btn-div button {
+    height: 45px;
+  }
+
+  .menu-section {
+    display: block;
+  }
+
+  .menu-section .menu {
+    width: 100%;
+    flex: 1;
+  }
+
+  .menu-section .menu .menu-list {
+    height: 50px;
+    display: flex;
+    overflow: scroll;
+  }
+
+  .menu-section .menu .menu-list .menu-list-item {
+    height: 100%;
+    font-size: 16px;
+    min-width: 150px;
+  }
+
+  .menu-section .content {
+    display: block;
+    width: 100%;
+    position: relative;
+  }
+
+  .menu-section .content .meal-image {
+    width: 100%;
+    min-height: 200px;
+    background-position: 0% 20%;
+    background-size: cover;
+  }
+
+  .menu-section .content .meal-details {
+    width: 100%;
+    background-color: red;
+    background-color: white;
+    padding-right: 0px;
+    padding-bottom: 50px;
+  }
+
+  .menu-section .content .meal-details .title-container {
+    padding: 20px;
+    border-bottom: 4px solid orange;
+  }
+
+  .menu-section .content .meal-details .title-container .title {
+    font-size: 20px;
+  }
+
+  .menu-section .content .meal-details .title-container .subtitle {
+    font-size: 24px;
+  }
+
+  .menu-section .content .meal-details .details-container {
+    padding: 20px;
+  }
+
+  .menu-section .content .meal-details .carousel-controller {
+    display: flex;
+    padding: 0 20px 20px;
+    justify-content: center;
+  }
+
+  .sub-heading-section {
+    min-height: fit-content;
+    padding: 20px;
+  }
+
+  .sub-heading-section .content {
+    width: 100%;
+    height: 300px;
+  }
+
+  .sub-heading-section .content .title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .sub-heading-section .content .body {
+    font-size: 14px;
+    width: 90%;
+  }
+
+  .footer {
+    min-height: fit-content;
+    padding: 70px 20px;
+    margin-bottom: 50px;
+  }
+
+  .footer .logo {
+    width: 100px;
+    height: 100px;
+    background-color: #c4c4c470;
+  }
+
+  .footer .logo p {
+    font-size: 24px;
+  }
+
+  .footer .footer-items {
+    display: block;
+  }
+
+  .footer .footer-items .content {
+    display: block;
+    padding: 0 0 0 20px;
+    width: auto;
+  }
+
+  .footer .footer-items .content .body.icons .img-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  }
+
+  .footer .footer-items .content .right {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .footer .footer-items .content .right .follow {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .footer .footer-items .content .right .send .title {
+    width: 100%;
+  }
+}
