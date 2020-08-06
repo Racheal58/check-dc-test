@@ -378,11 +378,9 @@ ul.nav .active {
   align-items: center;
   height: 270px;
   flex-direction: column;
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
+      rgba(0, 0, 0, 0.5)),
     url("./images/leaf.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -406,11 +404,9 @@ ul.nav .active {
 .footer {
   min-height: 730px;
   background-color: #e25519;
-  background-image: linear-gradient(
-      to bottom,
+  background-image: linear-gradient(to bottom,
       rgba(226, 85, 25, 0.9),
-      rgba(226, 85, 25, 0.9)
-    ),
+      rgba(226, 85, 25, 0.9)),
     url("./images/footer-bg.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -444,6 +440,10 @@ ul.nav .active {
   position: absolute;
   width: 100%;
   z-index: 1;
+  overflow-y: visible;
+  overflow-x: hidden;
+  height: 100px;
+  align-items: center;
 }
 
 .footer .footer-items .content {
@@ -507,7 +507,7 @@ ul.nav .active {
   background-color: #efb357;
   border-radius: 100%;
   position: absolute;
-  top: -20px;
+  top: 0;
   right: -50px;
   z-index: 0;
 }
@@ -782,6 +782,10 @@ ul.nav .active {
 
   .footer .footer-items {
     display: block;
+    overflow-y: visible;
+    overflow-x: hidden;
+    height: fit-content;
+    align-items: center;
   }
 
   .footer .footer-items .content {
